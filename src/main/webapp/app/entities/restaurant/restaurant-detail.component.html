@@ -1,0 +1,40 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="restaurant">
+            <h2><span jhiTranslate="myappApp.restaurant.detail.title">Restaurant</span> {{ restaurant.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="myappApp.restaurant.name">Name</span></dt>
+                <dd>
+                    <span>{{ restaurant.name }}</span>
+                </dd>
+                <dt><span jhiTranslate="myappApp.restaurant.address">Address</span></dt>
+                <dd>
+                    <span>{{ restaurant.address }}</span>
+                </dd>
+                <dt><span jhiTranslate="myappApp.restaurant.compte">Compte</span></dt>
+                <dd>
+                    <div *ngIf="restaurant.compteId">
+                        <a [routerLink]="['/compte', restaurant.compteId, 'view']">{{ restaurant.compteId }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/restaurant', restaurant.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

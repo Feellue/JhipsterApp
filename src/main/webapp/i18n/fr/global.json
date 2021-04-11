@@ -10,6 +10,11 @@
         "blog": "Blog",
         "post": "Post",
         "tag": "Tag",
+        "restaurant": "Restaurant",
+        "produit": "Produit",
+        "panier": "Panier",
+        "compte": "Compte",
+        "systemePaiement": "Systeme Paiement",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

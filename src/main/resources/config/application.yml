@@ -144,15 +144,15 @@ jhipster:
     from: myapp@localhost
   swagger:
     default-include-pattern: /api/.*
-    title: myapp API
-    description: myapp API documentation
-    version: 0.0.1
+    title: The API app
+    description: this is myapp API documentation
+    version: 0.12.3
     terms-of-service-url:
-    contact-name:
-    contact-url:
-    contact-email:
-    license: unlicensed
-    license-url:
+    contact-name: bob Johnson
+    contact-url: bob.johnson.com
+    contact-email: bob.johnson@gmail.com
+    license: BJlicense
+    license-url: BJlicense.com
 # ===================================================================
 # Application specific properties
 # Add your own application properties here, see the ApplicationProperties class

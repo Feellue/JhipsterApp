@@ -17,9 +17,18 @@
     <include file="config/liquibase/changelog/20210411163912_added_entity_Blog.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210411164012_added_entity_Post.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210411164112_added_entity_Tag.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210411175826_added_entity_Restaurant.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210411175926_added_entity_Produit.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210411180026_added_entity_Panier.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210411180126_added_entity_Compte.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210411180226_added_entity_SystemePaiement.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <include file="config/liquibase/changelog/20210411163912_added_entity_constraints_Blog.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210411164012_added_entity_constraints_Post.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210411175826_added_entity_constraints_Restaurant.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210411175926_added_entity_constraints_Produit.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210411180026_added_entity_constraints_Panier.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210411180226_added_entity_constraints_SystemePaiement.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

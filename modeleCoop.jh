@@ -1,0 +1,47 @@
+entity Restaurant {
+  name String required
+  address String required
+}
+
+entity Produit {
+  name String required
+  price Integer min(0) required
+  quantity Integer min(0) required
+}
+
+entity Panier {
+  nbElements Integer required
+  price Integer required
+}
+
+entity Compte {
+  name String required
+  surname String required
+  age Integer required
+  address String required
+}
+
+entity SystemePaiement {
+  method String
+}
+
+relationship OneToOne {
+    Restaurant to Compte
+}
+
+relationship OneToMany {
+    Restaurant to Produit
+    Compte to Panier
+}
+
+relationship ManyToMany {
+    Panier to Restaurant
+    SystemePaiement to Compte
+    Panier to Produit
+}
+
+paginate Restaurant, Panier, Produit with infinite-scroll
+paginate Compte, SystemePaiement with pagination
+
+dto * with mapstruct
+service * with serviceImpl
